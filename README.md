@@ -86,6 +86,7 @@ fn main() {
 The final step is building the application as follows:
 
 ```sh
+cargo install cargo-download cargo-binutils
 cargo build -Zbuild-std=std,core,alloc,panic_abort -Zbuild-std-features=compiler-builtins-mem --target x86_64-unknown-hermit
 ```
 
